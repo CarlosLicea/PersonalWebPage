@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px
+}
+
+/* HEADER */
+
+header {
+    top: 0;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header h1 {
+    padding-top: 20px;
+    padding-left: 25px;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #5D513F;
+}
+
+.headerList {
+    list-style: none;
+     display: flex;
+     margin-top: 50px;
+     margin-right: 30px;
+}
+
+.headerList .headerListItem a {
+    margin-right: 20px;
+    font-size: 22px;
+    color: rgba(91, 88, 88, 0.849);
+    text-decoration: none;
+}
+
+.headerList .headerListItem a:hover{
+    color: #625139;
+    text-decoration: underline 10px #6A011C;
+} 
+
+/* .menu {
+    display: none;
+} */
+
+h2 {
+    color: #49111C;
+    font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+
+/* ABOUT ME */
+
+#aboutMe {
+    margin-bottom: 60px;
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.aboutMeColumn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#aboutMePhoto {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+}
+
+#profilePhoto{
+    height: 650px;
+    width: 590px;
+}
+
+#aboutMeText {
+    margin-top: 10%;
+    margin-left: 6%;
+    text-align: justify;
+    width: 50%;
+}
+
+/* HISTORY */
+
+.history {
+    margin-top: 100px;
+}
+
+#historyTitle {
+    text-align: end;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+#historyPhoto {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 80%;
+}
+
+#historyText {
+    margin-top: 10%;
+    margin-right: 6%;
+    text-align: justify;
+    width: 50%;
+}
+/* EDUCATION */
+
+#education {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+#educationTitle {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.educationContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.educationColumn {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.educationPhoto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+}
+
+.educationText {
+    margin-top: 20px;
+    text-align: justify;
+    width: 100%;
+    font-size: 20px;
+}
+
+/* EXPERIENCE SCREEN */
+.experience main {
+    justify-content: end;
+}
+
+.experienceTitle {
+    text-align: center;
+}
+
+.experiencePhoto {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+}
+
+.experiencePhoto2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.experiencePhoto1 {
+    width: 35%;
+    height: 40%;
+    margin-top: 100px;
+    margin-left: 2%;
+}
+
+.experienceText {
+    margin-top: 10%;
+    margin-left: 6%;
+    text-align: justify;
+    width: 50%;
+}
+
+.experienceText1 {
+    margin-left: 0;
+    margin-top: 60px;
+}
+
+.experienceText span {
+    font-weight: bold;
+    color: #5D513F;
+}
+
+/* CONTACT SCREEN */
+
+.pageBody {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contactTitle {
+    display: flex;
+    justify-content: end;
+    border-bottom: 2px solid rgba(91, 88, 88, 0.849);
+}
+
+.contactTitle h2 {
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.contactInfo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.contactInfo i {
+    font-size: 40px;
+    color: #6A011C;
+}
+
+.contactInfo p {
+    margin-left: 10px;
+    display: inline-block;
+}
+ 
+.contactCard {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+} 
+
+.contactCardAlign {
+    width: 1500px;
+}
+
+.contactCard form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contactCard form input{
+    height: 80px;
+    font-size: 30px;
+    color: #625139;
+
+}
+
+.contactCard form input::placeholder, .contactCard form textarea::placeholder  {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(91, 88, 88, 0.849);
+}
+
+.submitContainer {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/4;
+    justify-content: end;
+}
+
+#contactName {
+    margin-right: 50px;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#contactMail {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#contactSubject {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#contactComments {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: 150px;
+}
+
+#contactSend {
+    margin-top: 30px;
+    width: 180px;
+    height: 80px;
+    background-color: #c08127;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid #625139;
+}
+
+#contactSend:hover {
+    background-color: #efae53;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 40px;
+    color: #5D513F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.footerText {
+    text-align: center;
+}
+
+.redes {
+    text-align: center;
+    font-size: 25px;
+}
+
+.redes h3 {
+    color: #49111C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logos {
+    margin-top: 10px;
+}
+
+.redes a i {
+    font-size: 45px;
+    letter-spacing: 10px;
+    color: #5D513F;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1540px) {
+
+    #aboutMe main {
+        margin-top: 50px;
+    }
+
+    .contactCard {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactCard form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .contactCardAlign {
+        width: 100%;
+    }
+
+    #contactName {
+        margin-bottom: 40px;
+        margin-right: 0;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    #contactMail {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    #contactSubject {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    #contactComments {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 150px;
+    }
+    
+    .submitContainer {
+        margin-top: 30px;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 5/5;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1523px) {
+    header h1 {
+        font-size: 40px;
+    }
+     /* CONTACI NFO */
+    .contactInfo {
+        flex-direction: column;
+    }
+    .location, .envelope, .phone {
+        margin-bottom: 50px;
+    }
+}
+
+/* HEADER */
+@media only screen and (max-width: 1250px) {
+    /* .menu: CODIGO PARA LA LISTA DESPLEGABLE */
+    .menu {
+        display: flex;
+        cursor: pointer;
+        background-color: inherit;
+        color: #6A011C;
+    }
+    .headerContainer {
+        display: none;
+    }
+
+    #aboutMePhoto, #historyPhoto, .experiencePhoto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experienceText span {
+        display: flex;
+        justify-content: center;
+    }    
+
+    #aboutMeText, #historyText, .experienceText {
+        margin: 0;
+        margin-top: 70px;
+        width: 70%;
+        font-size: 25px;
+    }
+
+    .experienceColumn #aboutMePhoto, .experiencePhoto {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .experiencePhoto1 {
+        margin-top: 10px;
+    }
+    .experienceColumn #aboutMePhoto #experienceText span{
+        width: 40%;
+    }
+}
+
+/* HEADER */
+@media only screen and (max-width: 915px) {
+    header h1 {
+        font-size: 35px;
+    }
+    #aboutMeText, #historyText {
+        width: 70%;
+        font-size: 25px;
+    }
+
+}
+
+/* FOOTER */
+@media only screen and (max-width: 840px) {
+    footer {
+        display: grid;
+    }
+    .redes {
+        margin-top: 20px
+    }
+    #aboutMeText, #historyText, .experienceText {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .experienceTitle {
+        margin-bottom: 0;
+    }
+
+    .experiencePhoto1 {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #profilePhoto, #historyPhoto {
+        height: 80%;
+        width: 80%;
+    }
+
+    #profileText, #historyText, .experienceText {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+/* CONTACT INFO */
+@media only screen and (max-width: 545px) {
+    #profileTitle, .experienceTitle {
+        font-size: 55px;
+    }
+
+    #historyTitle {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .educationContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .educationColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+        width: 100%;
+        height: 100%;
+    }
+
+    #aboutMeText, #historyText, .educationText, .experienceText {
+        font-size: 15px;
+    }
+    .contactInfo p {
+        font-size: 25px;
+    }
+
+    #aboutMeText, #historyText, .experienceText {
+        margin-top: 0px;
+    }
+    .firstText {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header h1 {
+        font-size: 25px;
+    }
+    main, .experience main {
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+    .experience main {
+        margin: 0;
+    }
+
+    #educationTitle {
+        font-size: 50px;
+    }
+
+    .contactInfo p {
+        font-size: 20px;
+    }
+
+    .contactCard form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr);
+        margin-left: 0;
+        margin-right: 0px;
+    }
+}
