@@ -81,6 +81,10 @@ h2:hover {
     transform: scale(1.2);
 }
 
+#historyTitle:hover {
+    transform: translateX(-20px);
+}
+
 main {
     margin-top: 80px;
     margin-right: 20px;
