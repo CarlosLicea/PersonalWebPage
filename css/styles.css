@@ -610,7 +610,7 @@ footer p {
     .letterSize {
         font-size: 80%;
     }
-    ..nright p {
+    .nright p {
         width: 100%;
     }
 }
