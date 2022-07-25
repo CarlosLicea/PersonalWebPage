@@ -241,6 +241,29 @@ main {
     color: #5D513F;
 }
 
+/* MICROSOFT/WEB SCREEN */
+.microsoft {
+    margin-bottom: 100px;
+}
+#microsoftTitle {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.microsoft h4, .webDevelopment h4 {
+    font-size: 40px;
+    color: #5D513F;
+}
+.microsoft p, .webDevelopment p {
+    font-size: 20px;
+    text-align: justify;
+}
+.item {
+    border: 2px solid #fff;
+    text-align: center;
+}
+.item img {
+    height: 400px;
+}
 /* CERTIFICATES SCREEN */
 #certificationTitle {
     text-align: center;
@@ -610,6 +633,9 @@ footer p {
     }
     .nright p {
         width: 100%;
+    }
+    #microsoftTitle, #webTitle {
+        font-size: 250%;
     }
 }
 
