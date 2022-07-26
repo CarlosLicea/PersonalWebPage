@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Carlos A Licea Garza - Microsoft/Web</title>
 </head>
@@ -47,7 +48,7 @@
     <main>
         <h2 id="microsoftTitle">Microsoft Power Platform & UiPath</h2>
     </main>
-    <section class="container-fluid microsoft">
+    <section class="container-fluid microsoft" data-aos="flip-down">
         <div class="row">
             <div class="item item1 col-md-6 col-lg-4">
                 <h4>Power Apps</h4>
@@ -69,7 +70,7 @@
         </div>
     </section>
     <h2 id="webTitle">Web Development</h2>
-    <section class="container-fluid webDevelopment">
+    <section class="container-fluid webDevelopment" data-aos="zoom-in-up">
         <div class="row">
             <div class="item item1 col-md-6 col-lg-4">
                 <h4>HTML 5</h4>
@@ -111,15 +112,14 @@
 <footer>
     <div class="footerText">
         <h2 class="">Carlos Alejandro Licea Garza</h2>
-        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis itaque unde
+        <p class="">"Never Give Up And Continue Developing 🦦"
         </p>
     </div>
     <div class="redes">
         <h3>Social Media:</h3>
         <div class="logos">
-            <a href="www.linkedin.com/in/carlos-alejandro-licea-garza-489a2811a"><i
-                    class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-github-square"></i></a>
+            <a href="https://linkedin.com/in/carlos-alejandro-licea-garza-489a2811a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/CarlosLicea" target="_blank"><i class="fa-brands fa-github-square"></i></a>
         </div>
     </div>
 </footer>
@@ -132,5 +132,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>

@@ -96,25 +96,10 @@ main {
 
 /* ABOUT ME */
 
-#aboutMe {
-    margin-bottom: 60px;
-}
-
-.aboutMeContainer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    /* height: 100%; */
-}
-
-.aboutMeColumn {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    opacity: 1;
-    transform: translateZ(0);
+#aboutMeTitle {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 #aboutMePhoto {
@@ -125,7 +110,7 @@ main {
     justify-content: center; 
 }
 
-#profilePhoto{
+.profilePhoto{
     height: 650px;
 }
 
@@ -135,7 +120,12 @@ main {
     text-align: justify;
     width: 50%;
 }
-
+.profilePhoto:hover {
+    transform: scale(1.2);
+}
+.letterSize:hover {
+    transform: scale(1.2);
+}
 /* HISTORY */
 .history {
     margin-top: 100px;
@@ -193,6 +183,9 @@ main {
     width: 100%;
     font-size: 20px;
 }
+.educationText:hover {
+    transform: scale(1.2);
+}
 
 /* EXPERIENCE SCREEN */
 .experience main {
@@ -210,7 +203,7 @@ main {
 .experiencePhoto {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     height: 80%;
 }
 .experiencePhoto:hover, .experiencePhoto2:hover {
@@ -249,6 +242,9 @@ main {
     margin-top: 30px;
     margin-bottom: 60px;
 }
+#microsoftTitle:hover, #webTitle:hover {
+    transform: translateX(30px);
+}
 .microsoft h4, .webDevelopment h4 {
     font-size: 40px;
     color: #5D513F;
@@ -260,6 +256,9 @@ main {
 .item {
     border: 2px solid #fff;
     text-align: center;
+}
+.item:hover {
+    transform: scale(1.2);
 }
 .item img {
     height: 400px;
@@ -298,6 +297,12 @@ main {
 }
 .certificateRow2 {
     margin-bottom: 0;
+}
+.certificateBackTitle:hover {
+    transform: translateX(40px);
+}
+.certificateContent:hover {
+    transform: translateY(-50px);
 }
 /* CONTACT SCREEN */
 
@@ -580,6 +585,9 @@ footer p {
     .textTwo p {
         margin-left: 0;
     }
+    .experiencePhoto{
+        width: 100%;
+    }
 }
 
 /* HEADER */
@@ -616,7 +624,7 @@ footer p {
 }
 
 @media only screen and (max-width: 650px) {
-    #profilePhoto, #historyPhoto {
+    .profilePhoto, #historyPhoto {
         height: 80%;
         width: 80%;
     }
@@ -696,7 +704,7 @@ footer p {
         margin: 0;
     }
 
-    #educationTitle {
+    #educationTitle, #aboutMeTitle {
         font-size: 50px;
     }
 
